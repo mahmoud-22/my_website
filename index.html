@@ -4,34 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Personal Portfolio</title>
-    <title>
-        My Web Site
-    </title>
+
+
 </head>
 
 <body>
-    <header>
-        <a href="#main" class="logo">MAHMOUD</a>
+    <header class="bg-gradient-to-r from-blue-500 to-cyan-50">
+
+        <a href="#main " class="text-4xl font-bold text-white">Mahmoud</a>
         <nav class="navigation">
             <a href="#skills">Skills</a>
-            <a href="#project">Project</a>
+            <a href="#projects">Project</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="main" id="main">
-        <div>
-            <h2>Hello, I'm Mahmoud <br> <span>Front-End Developer</span></h2>
-            <h3>I build a simple web application</h3>
-            <a href="#project" class="main-btn">Veiw My Project</a>
-            <div class="social">
+        <div class="bb">
+            <h2>Hello, I'm Mahmoud <br> <span>Data Analyst</span></h2>
+            <h3>I turn raw data into actionable insights. </h3>
+            <a href="#projects" class="main-btn">Veiw My Project</a>
 
+            <div class="social">
                 <a href="https://www.linkedin.com/in/mahmoud-essam-57b658192?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsLHOfuw0QUif1HEIURz%2FIQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="a"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/mahmoud-22"><i class="fa-brands fa-github"></i></a>
                 <a href="a"><i class="fa-brands fa-facebook"></i></a>
                 <a href="a"><i class="fa-brands fa-instagram"></i></a>
             </div>
@@ -39,43 +39,105 @@
     </section>
 
 
-    <section class="cards" id="skills">
+    <section class="projects bg-gradient-to-r from-blue-200 via-purple-200 to-blue-200
+    py-12" id="skills">
         <h2 class="title">Skills</h2>
         <div class="content">
             <div class="card">
                 <div class="icon_1">
-                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-regular fa-file-excel"></i>
+                    <!-- أيقونة Excel -->
                 </div>
                 <div class="info">
-                    <h3>HTML</h3>
-                    <p>Excellent</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon2">
-                    <i class="fa-brands fa-css3-alt"></i>
-                </div>
-                <div class="info">
-                    <h3>CSS</h3>
-                    <p>Excellent</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon3">
-                    <i class="fa-brands fa-js"></i>
-                </div>
-                <div class="info">
-                    <h3>JAVA SCRIPT</h3>
-                    <p>Very Good</p>
+                    <h3>Excel</h3>
+                    <p>Expert in data analysis, advanced formulas, and data visualization.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="icon4">
-                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-solid fa-database"></i>
+                    <!-- أيقونة SQL -->
                 </div>
                 <div class="info">
-                    <h3>BOOTSTRAP</h3>
-                    <p>Very Good</p>
+                    <h3>SQL</h3>
+                    <p>Proficient in querying and manipulating data from databases.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon2">
+                    <i class="fa-solid fa-chart-bar"></i>
+                </div>
+                <div class="info">
+                    <h3>Power BI</h3>
+                    <p>Skilled in building dynamic dashboards and reporting tools.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon3">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <!-- أيقونة Tableau -->
+                </div>
+                <div class="info">
+                    <h3>Tableau</h3>
+                    <p>Skilled in data visualization and creating interactive dashboards.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon4">
+                    <i class="fa-brands fa-python"></i>
+                    <!-- أيقونة Python -->
+                </div>
+                <div class="info">
+                    <h3>Python</h3>
+                    <p>Experience in data analysis , Numpy , panda and scripting using Python.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+
+
+    <section class="py-12 bg-gray-50" id="projects">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-blue-500 mb-8">Projects</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <!-- Card 1-->
+                <div class="max-w-sm mx-auto bg-gradient-to-b from-white via-gray-100 to-gray-200 shadow-lg rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img src="images/sq te.png" alt="Data Cleaning With SQL" class="w-full h-48 object-cover rounded-t-xl">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Data Cleaning With SQL</h3>
+                        <p class="text-gray-600 mb-4">Focuses on cleaning and transforming raw data using SQL.</p>
+                        <a href="https://github.com/mahmoud-22/Data-cleaning-SQL-" class="block mt-4 text-blue-500 hover:text-blue-700 transition duration-300">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Card 2-->
+                <div class="max-w-sm mx-auto bg-gradient-to-b from-white via-gray-100 to-gray-200 shadow-lg rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img src="images/imgexcel.png" alt="Bike Sales Analysis in Excel" class="w-full h-48 object-cover rounded-t-xl">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Bike Sales Analysis in Excel</h3>
+                        <p class="text-gray-600 mb-4">Focuses on analyzing bike sales data using Excel, Techniques like pivot tables, charts, and conditional formatting.</p>
+                        <a href="https://github.com/mahmoud-22/Bike-Sales-Analysis-Excel-" class="block mt-4 text-blue-500 hover:text-blue-700 transition duration-300">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Card 3-->
+                <div class="max-w-sm mx-auto bg-gradient-to-b from-white via-gray-100 to-gray-200 shadow-lg rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img src="images/imgpowerbi.png" alt="Data Professional Survey with POWER BI" class="w-full h-48 object-cover rounded-t-xl">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Data Professional Survey with POWER BI</h3>
+                        <p class="text-gray-600 mb-4">This project utilizes Power BI to analyze survey data collected from data professionals.</p>
+                        <a href="https://github.com/mahmoud-22/Data-Professional-Survey-Breakdown" class="block mt-4 text-blue-500 hover:text-blue-700 transition duration-300">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Btn -->
+                <div class="text-center mt-6">
+                    <a href="https://github.com/mahmoud-22" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center px-8 py-4 rounded-full shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+                        More projects Here   </a>
+                  
                 </div>
             </div>
         </div>
@@ -83,63 +145,6 @@
 
 
 
-    <section class="projects" id="project">
-        <h2 class="title">Project</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/img1.jpeg" alt=".." />
-                </div>
-                <div class="project-info">
-                    <p class="project_ca">Cafe & Restraunt</p>
-                    <strong class="project_title"><span>starbaks</span> </strong>
-                    <a href="#" class="more-details">More Details</a>
-
-
-                </div>
-
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/img1.jpeg" alt=".." />
-                </div>
-                <div class="project-info">
-                    <p class="project_ca">Cafe & Restraunt</p>
-                    <strong class="project_title"><span>starbaks</span> </strong>
-                    <a href="#" class="more-details">More Details</a>
-
-
-                </div>
-
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/img1.jpeg" alt=".." />
-                </div>
-                <div class="project-info">
-                    <p class="project_ca">Cafe & Restraunt</p>
-                    <strong class="project_title"><span>starbaks</span> </strong>
-                    <a href="#" class="more-details">More Details</a>
-
-
-                </div>
-
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/img1.jpeg" alt=".." />
-                </div>
-                <div class="project-info">
-                    <p class="project_ca">Cafe & Restraunt</p>
-                    <strong class="project_title"><span>starbaks</span> </strong>
-                    <a href="#" class="more-details">More Details</a>
-
-
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <section class="card-contact" id="contact">
         <h2 class="title">Let's work together</h2>
@@ -175,6 +180,7 @@
             <a href="a"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
+
 </body>
 
 </html>
